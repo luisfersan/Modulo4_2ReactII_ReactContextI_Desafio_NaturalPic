@@ -3,7 +3,7 @@ body {
 }
 
 .App {
-  font-family: "Maitree", serif;
+  font-family: 'Maitree', serif;
   text-align: center;
   color: #43a047;
 }
@@ -11,7 +11,6 @@ body {
 h1 {
   margin-bottom: 0;
 }
-
 
 /* Navbar */
 a {
@@ -28,7 +27,11 @@ a {
 /* gallery */
 .gallery {
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  gap: 1px;
+  padding: 0%;
 }
 
 .grid-columns-5 {
@@ -59,8 +62,38 @@ a {
 
 .gallery .photo svg {
   align-self: flex-end;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .p-3 {
   padding: 30px;
+}
+
+.photo-card {
+  /* flex: 1 0 auto; */
+  margin: 0;
+  /* padding: 0; */
+  position: relative;
+}
+
+.fixed-size-img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative; /* Necesario para el posicionamiento absoluto del ícono */
+}
+
+.heart-button {
+  position: absolute;
+  top: 10px;
+  right: 180px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }

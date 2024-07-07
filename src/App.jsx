@@ -1,10 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Favorites from './views/Favorites'
+import Home from './views/Home'
 
-import Favorites from "./views/Favorites";
-import Home from "./views/Home";
-
-const PHOTO_URL = "/photos.json";
+const PHOTO_URL = '../public/photos.json'
 
 const App = () => {
   return (
@@ -22,6 +21,6 @@ const App = () => {
         />
       </Routes>
     </div>
-  );
-};
-export default App;
+  )
+}
+export default App
